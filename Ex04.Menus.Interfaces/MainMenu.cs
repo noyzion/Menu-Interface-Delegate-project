@@ -93,7 +93,8 @@ namespace Ex04.Menus.Interfaces
                 try
                 {
                     string userChoiceStr = Console.ReadLine();
-                    validUserChoice(userChoiceStr, out userChoiceInt);
+                    validInput = validUserChoice(userChoiceStr, out userChoiceInt);
+
                 }
                 catch (Exception exception)
                 {
