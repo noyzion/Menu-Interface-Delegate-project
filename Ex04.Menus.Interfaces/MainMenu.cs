@@ -75,7 +75,6 @@ namespace Ex04.Menus.Interfaces
         private void navigateToSubMenu(int i_UserChoice)
         {
             m_CurrentMenuItem = m_CurrentMenuItem.GetSubMenuByIndex(i_UserChoice - 1);
-
             if (m_CurrentMenuItem.CountSubs == 0)
             {
                 m_CurrentMenuItem.Selected();
@@ -93,8 +92,8 @@ namespace Ex04.Menus.Interfaces
                 try
                 {
                     string userChoiceStr = Console.ReadLine();
-                    validInput = validUserChoice(userChoiceStr, out userChoiceInt);
 
+                    validInput = validUserChoice(userChoiceStr, out userChoiceInt);
                 }
                 catch (Exception exception)
                 {

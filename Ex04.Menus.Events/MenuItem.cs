@@ -75,7 +75,6 @@ namespace Ex04.Menus.Events
         public void Show(string i_FinishWord)
         {
             Console.Clear();
-
             if (r_SubMenuItems.Count != 0)
             {
                 printMenu(i_FinishWord);
